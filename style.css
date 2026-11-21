@@ -1,5 +1,75 @@
+@font-face {
+    font-family: 'Matcha Style';
+    src: url(./assets/font/MatchaStyle.ttf) format('truetype'),
+         url(./assets/font/MatchaStyle.otf) format('opentype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    background: #f6e9da;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+.hero-design {
+    height: 70%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.center-pup {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.center-pup img {
+    height: 560px;
+}
+
+.center-pup p {
+    text-align: center;
+    position: absolute;
+    top: 49%;
+    color: #3b3835;
+    font-size: 42px;
+    font-family: 'Matcha Style', serif;
+    /* left: 50%; */
+}
+
+.paw img {
+    height: 150px;
+    /* margin: 50px; */
+}
+
+.paw-1 img {
+    margin: 0 160px 120px 0;
+}
+
+.paw-2 img {
+    margin: 160px 0 0 120px;
+}
+
+.play-btn {
+    height: 60px;
+    width: 120px;
+    background-color: #e2725b;
+    border: 5px outset #c4614d;
+    border-radius: 16px;
+    font-family: 'Matcha Style';
+    font-size: 32px;
 }
