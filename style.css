@@ -16,6 +16,11 @@
 body {
     height: 100vh;
     width: 100%;
+}
+
+.hero {
+    height: 100%;
+    width: 100%;
     background: #f6e9da;
     display: flex;
     align-items: center;
@@ -72,4 +77,29 @@ body {
     border-radius: 16px;
     font-family: 'Matcha Style';
     font-size: 32px;
+    cursor: pointer;
+}
+
+.start {
+    display: none;
+    height: 100%;
+    width: 100%;
+    background-color: #f6e9da;
+    align-items: end;
+    /* justify-content: center; */
+    padding: 120px 200px;
+}
+
+.start img {
+    position: absolute;
+    top: 120px;
+}
+
+.start p {
+    /* width: 80%; */
+    border: 2px dashed #3b3835;
+    font-family: 'Matcha Style';
+    line-height: 1.8;
+    font-size: 24px;
+    padding: 40px;
 }
