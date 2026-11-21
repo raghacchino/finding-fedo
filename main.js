@@ -83,6 +83,8 @@ cupboards.forEach((cupboard) => {
 replayBtn.addEventListener("click", () => {
     showRandomAnimals()
     replayBtn.style.display = "none"
+    rightAnimal.style.display = "none"
+    wrongAnimal.style.display = "none"
     animal1.style.zIndex = "-1"
     animal2.style.zIndex = "-1"
     animal3.style.zIndex = "-1"

@@ -1,7 +1,7 @@
 @font-face {
     font-family: 'Matcha Style';
     src: url(./assets/font/MatchaStyle.ttf) format('truetype'),
-         url(./assets/font/MatchaStyle.otf) format('opentype');
+        url(./assets/font/MatchaStyle.otf) format('opentype');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -22,7 +22,10 @@ body {
 .hero {
     height: 100%;
     width: 100%;
-    background: #f6e9da;
+    background: url(./assets/bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -83,7 +86,10 @@ body {
     display: none;
     height: 100%;
     width: 100%;
-    background-color: #f6e9da;
+    background: url(./assets/bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     align-items: end;
     /* justify-content: center; */
     padding: 120px 200px;
@@ -103,7 +109,10 @@ body {
 }
 
 .game {
-    background: #f6e9da;
+    background: url(./assets/bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     height: 100vh;
     display: none;
     justify-content: center;
@@ -146,7 +155,7 @@ body {
     /* margin-top: 50px; */
 }
 
-.cupboard > img {
+.cupboard>img {
     height: 500px;
 }
 
