@@ -7,10 +7,13 @@
     <title>Finding Fedo</title>
     <link rel="stylesheet" href="./style.css">
     <link rel="shortcut icon" href="./assets/icon.ico">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css" />
 </head>
 
 <body>
     <main class="hero">
+        <p>Play in full screen view for best experience</p>
         <div class="hero-design">
             <div class="paw paw-1">
                 <img src="./assets/paw-1.png" alt="">
@@ -30,14 +33,18 @@
         <div class="speech">
             <img src="./assets/animal1.png" alt="">
             <p>Hi! I'm Fedo.
-                <br> I like hiding. Try to find me, I bet you can't. (*evil laugh)</p>
+                <br> I like hiding. Try to find me, I bet you can't. (*evil laugh)
+            </p>
         </div>
     </div>
 
     <div class="game">
         <div class="score">
             <img src="./assets/treat.png" alt="">
-            <p id="scoreCounter">00</p>
+            <p id="scoreCounter" class="title">
+                <span class="title-item">0</span>
+                <span class="title-item">0</span>
+            </p>
         </div>
 
         <div class="cupboards">
@@ -68,9 +75,21 @@
             I'm Not Fedo!
         </div>
 
-        <button class="replay-btn" id="replayBtn">Next Round</button>
+        <button class="next-btn" id="nextBtn">Next Round</button>
+
+        <div class="alert-box">
+            <p>You got a power boost by Fedo! You will earn double Treat Points after the next right answer!!</p>
+            <button class="alert-btn"><i class="ph-fill ph-x-circle"></i></button>
+        </div>
+
+        <div class="win-box">
+            <p>You made it look easy. Congrats!</p>
+
+            <button class="replay-btn" id="replayBtn">Play Again</button>
+        </div>
     </div>
 
+    <script src="https://cdn.jsdelivr.net/npm/@tsparticles/confetti@4.5.3/tsparticles.confetti.bundle.min.js"></script>
     <script src="main.js"></script>
 </body>
 
