@@ -91,6 +91,12 @@ cupboards.forEach((cupboard) => {
                 })
             }
         } else {
+            if (score == 0 && !animal.src.includes("animal1.png")) {
+                alertBox.style.display = "flex"
+                alertBtn.addEventListener("click", () => {
+                    alertBox.style.display = "none"
+                })
+            }
             if (animal.src.includes("animal1.png")) {
                 rightAnimal.style.display = "flex"
                 // rightAnimal.style.opacity = "1"
