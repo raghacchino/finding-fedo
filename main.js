@@ -22,6 +22,9 @@ const alertBtn = document.querySelector(".alert-btn")
 const scoreAnimation = document.querySelector(".title-item")
 const winBox = document.querySelector(".win-box")
 const replayBtn = document.querySelector(".replay-btn")
+const fedoCaught = document.querySelector(".fedo-caught")
+const fedoConversation = document.querySelector(".fedo-conversation")
+const fedoWin = document.querySelector(".fedo-win")
 
 // function replay() {
 //     hero.style.display = "none"
@@ -79,6 +82,7 @@ cupboards.forEach((cupboard) => {
         if (score < 0) {
             if (animal.src.includes("animal1.png")) {
                 rightAnimal.style.display = "flex"
+                fedoCaught.play()
                 // rightAnimal.style.opacity = "1"
                 // rightAnimal.style.transform = "translateY(0)"
                 score += 20
@@ -99,6 +103,7 @@ cupboards.forEach((cupboard) => {
             }
             if (animal.src.includes("animal1.png")) {
                 rightAnimal.style.display = "flex"
+                fedoCaught.play()
                 // rightAnimal.style.opacity = "1"
                 // rightAnimal.style.transform = "translateY(0)"
                 score += 10
@@ -140,6 +145,11 @@ cupboards.forEach((cupboard) => {
                 })
                 if (Date.now() < end) requestAnimationFrame(frame);
             })()
+            fedoCaught.play().then(() => {
+                fedoCaught.addEventListener('ended', () => {
+                    fedoWin.play();
+                }, { once: true })
+            })
         }
     })
 })
@@ -197,6 +207,7 @@ replayBtn.addEventListener("click", () => {
 playBtn.addEventListener("click", () => {
     hero.style.display = "none"
     startModel.style.display = "flex"
+    fedoConversation.play()
 })
 
 startModel.addEventListener("click", () => {
