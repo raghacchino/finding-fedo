@@ -204,15 +204,22 @@ body {
 }
 
 .cupboard>img {
-    height: 500px;
+    height: 400px;
+}
+
+.cupboard .animal {
+    /* height: 400px; */
+    /* width: 100%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .cupboard .animal img {
     z-index: -1;
     position: relative;
+    bottom: 330px;
     height: 226px;
-    bottom: 380px;
-    left: 100px;
 }
 
 .rightAnimal {
